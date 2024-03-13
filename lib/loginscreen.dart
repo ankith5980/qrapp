@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:qrapp/qrscreen.dart';
 import 'package:qrapp/registration.dart';
 
 class LogIn extends StatefulWidget {
@@ -58,7 +59,12 @@ class _LogInState extends State<LogIn> {
                 foregroundColor: Colors.white,
                 padding: EdgeInsets.all(19.0),
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => QrScreen()),
+                );
+              },
               child: Text(
                 "Login",
                 style: TextStyle(color: Colors.white),
