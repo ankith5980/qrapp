@@ -32,7 +32,7 @@ class _LogInState extends State<LogIn> {
             TextField(
               decoration: InputDecoration(
                   enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.white, width: 1),
+                    borderSide: BorderSide(color: Colors.white, width: 3),
                     borderRadius: BorderRadius.circular(6),
                   ),
                   hintText: "Enter Your Roll No",
@@ -43,7 +43,7 @@ class _LogInState extends State<LogIn> {
             TextField(
               decoration: InputDecoration(
                 enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.white, width: 1),
+                  borderSide: BorderSide(color: Colors.white, width: 3),
                   borderRadius: BorderRadius.circular(6),
                 ),
                 hintText: "Enter Your Password",
@@ -55,7 +55,7 @@ class _LogInState extends State<LogIn> {
             TextButton(
               style: ElevatedButton.styleFrom(
                 shape: RoundedRectangleBorder(
-                    side: BorderSide(color: Colors.white70, width: 1)),
+                    side: BorderSide(color: Colors.white70, width: 2)),
                 foregroundColor: Colors.white,
                 padding: EdgeInsets.all(19.0),
               ),

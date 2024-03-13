@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:qrapp/loginscreen.dart';
 
 class Register extends StatefulWidget {
   const Register({super.key});
@@ -15,6 +16,15 @@ class _RegisterState extends State<Register> {
       home: Scaffold(
         backgroundColor: Colors.teal,
         appBar: AppBar(
+            leading: BackButton(
+              color: Colors.black,
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LogIn()),
+                );
+              },
+            ),
             backgroundColor: Colors.transparent,
             title: Text(
               "Registration",
@@ -30,7 +40,7 @@ class _RegisterState extends State<Register> {
               TextField(
                 decoration: InputDecoration(
                   enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.white, width: 1),
+                    borderSide: BorderSide(color: Colors.white, width: 3),
                     borderRadius: BorderRadius.circular(6),
                   ),
                   hintText: "Enter Your Name",
@@ -44,7 +54,7 @@ class _RegisterState extends State<Register> {
               TextField(
                 decoration: InputDecoration(
                   enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.white, width: 1),
+                    borderSide: BorderSide(color: Colors.white, width: 3),
                     borderRadius: BorderRadius.circular(6),
                   ),
                   hintText: "Enter Your Roll No.",
@@ -58,7 +68,7 @@ class _RegisterState extends State<Register> {
               TextField(
                 decoration: InputDecoration(
                   enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.white, width: 1),
+                    borderSide: BorderSide(color: Colors.white, width: 3),
                     borderRadius: BorderRadius.circular(6),
                   ),
                   hintText: "Enter Your Email",
@@ -72,7 +82,7 @@ class _RegisterState extends State<Register> {
               TextField(
                 decoration: InputDecoration(
                   enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.white, width: 1),
+                    borderSide: BorderSide(color: Colors.white, width: 3),
                     borderRadius: BorderRadius.circular(6),
                   ),
                   hintText: "Enter Your Password",
@@ -86,7 +96,7 @@ class _RegisterState extends State<Register> {
               TextButton(
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
-                      side: BorderSide(color: Colors.white70, width: 1)),
+                      side: BorderSide(color: Colors.white70, width: 2)),
                   foregroundColor: Colors.white,
                   padding: EdgeInsets.all(19.0),
                 ),
