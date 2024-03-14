@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:qr_flutter/qr_flutter.dart';
+import 'package:qrapp/imagescreen.dart';
 import 'package:qrapp/loginscreen.dart';
+import 'package:mobile_scanner/mobile_scanner.dart';
 
 class QrScreen extends StatefulWidget {
   const QrScreen({super.key});
@@ -61,7 +63,12 @@ class _QrScreenState extends State<QrScreen> {
                     foregroundColor: Colors.white,
                     padding: EdgeInsets.all(10.0),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ImageScr()),
+                    );
+                  },
                   child: Text(
                     "Scan",
                     style: TextStyle(

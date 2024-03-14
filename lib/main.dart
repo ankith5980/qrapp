@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:qrapp/loginscreen.dart';
-import 'package:qrapp/qrscreen.dart';
-import 'package:qrapp/registration.dart';
+import 'package:qrapp/profilescreen.dart';
 
 void main() {
   runApp(const QrApp());
@@ -19,7 +18,7 @@ class _QrAppState extends State<QrApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LogIn(),
+      home: Profile(),
     );
   }
 }
