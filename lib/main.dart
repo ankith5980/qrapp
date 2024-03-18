@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:qrapp/loginscreen.dart';
-import 'package:qrapp/profilescreen.dart';
 import 'package:qrapp/registration.dart';
 
 void main() {
