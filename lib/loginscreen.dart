@@ -27,7 +27,7 @@ Future<void> login(BuildContext context) async {
 
   var response = await http.post(url,
       headers: <String, String>{
-        'Content - Type': 'application/json; character=UTF-8'
+        'Content-Type': 'application/json; character=UTF-8'
       },
       body: jsonEncode({
         'rollno': rollNoController.text,
